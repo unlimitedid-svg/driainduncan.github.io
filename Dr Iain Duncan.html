@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)file:///Users/ijsd2026/Downloads/driainduncan.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr Iain Duncan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./Dr Iain Duncan_files/css2" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --teal-bright:#2BC4B6;
+  --teal-deep:#007681;
+  --teal-darker:#005860;
+  --teal-pale:#E6F7F6;
+  --teal-mid:#D0F0EE;
+  --white:#FFFFFF;
+  --off-white:#F5FAFA;
+  --text-dark:#00373D;
+  --text-mid:#2A5F65;
+  --text-muted:#5A8A8F;
+  --border:#B8E4E1;
+  --border-light:#D8F0EE;
+}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--text-dark);line-height:1.55;font-size:15px}
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--border-light);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:56px}
+.nav-brand{font-family:'Lora',serif;font-size:16px;font-weight:600;color:var(--teal-deep);letter-spacing:-0.01em}
+.nav-brand span{color:var(--teal-bright)}
+.nav-links{display:flex;gap:1.75rem;list-style:none}
+.nav-links a{font-size:12px;font-weight:400;letter-spacing:0.05em;text-transform:uppercase;color:var(--text-mid);text-decoration:none;transition:color 0.2s}
+.nav-links a:hover{color:var(--teal-deep)}
+.btn-nav{background:var(--teal-deep);color:#fff;border:none;padding:8px 18px;border-radius:6px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;cursor:pointer;text-decoration:none;transition:background 0.2s}
+.btn-nav:hover{background:var(--teal-darker)}
+.hero-wrap{background:var(--white);border-bottom:1px solid var(--border-light)}
+.hero{padding:3.5rem 2rem 3rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;max-width:1100px;margin:0 auto}
+.hero-tag{display:inline-block;background:var(--teal-pale);color:var(--teal-deep);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;padding:4px 12px;border-radius:100px;margin-bottom:1rem}
+.hero h1{font-family:'Lora',serif;font-size:clamp(1.9rem,3.5vw,2.6rem);line-height:1.2;font-weight:600;color:var(--text-dark);margin-bottom:0.85rem}
+.hero h1 em{color:var(--teal-deep);font-style:italic}
+.hero-desc{font-size:14px;color:var(--text-mid);line-height:1.7;margin-bottom:1.5rem;max-width:440px}
+.hero-actions{display:flex;gap:0.75rem;flex-wrap:wrap}
+.btn-primary{background:var(--teal-deep);color:#fff;border:none;padding:10px 20px;border-radius:7px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;cursor:pointer;text-decoration:none;transition:background 0.2s}
+.btn-primary:hover{background:var(--teal-darker)}
+.btn-outline{background:transparent;color:var(--teal-deep);border:1.5px solid var(--teal-deep);padding:10px 20px;border-radius:7px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:400;cursor:pointer;text-decoration:none;transition:all 0.2s}
+.btn-outline:hover{background:var(--teal-pale)}
+.hero-card{background:var(--teal-deep);border-radius:16px;padding:2rem 1.75rem;text-align:center;width:100%}
+.avatar-circle{width:72px;height:72px;border-radius:50%;background:var(--teal-bright);display:flex;align-items:center;justify-content:center;font-family:'Lora',serif;font-size:22px;font-weight:600;color:var(--teal-darker);margin:0 auto 0.85rem}
+.hero-card h3{font-family:'Lora',serif;font-size:17px;color:#fff;margin-bottom:0.3rem}
+.hero-card .sub{font-size:12px;color:rgba(255,255,255,0.7);margin-bottom:1.1rem}
+.credentials{display:flex;flex-direction:column;gap:0.4rem;text-align:left}
+.cred-item{background:rgba(255,255,255,0.12);border-radius:6px;padding:7px 12px;font-size:11px;color:rgba(255,255,255,0.9);display:flex;align-items:center;gap:8px}
+.cred-dot{width:5px;height:5px;border-radius:50%;background:var(--teal-bright);flex-shrink:0}
+.section{max-width:1100px;margin:0 auto;padding:3rem 2rem}
+.section-label{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal-bright);font-weight:500;margin-bottom:0.5rem}
+.section-title{font-family:'Lora',serif;font-size:clamp(1.4rem,2.2vw,1.75rem);font-weight:600;color:var(--text-dark);margin-bottom:0.75rem;line-height:1.3}
+.section-intro{font-size:14px;color:var(--text-mid);line-height:1.7;max-width:580px;margin-bottom:2rem}
+.about-text{font-size:14px;color:var(--text-mid);line-height:1.75;margin-bottom:0.75rem}
+.about-quote{font-family:'Lora',serif;font-style:italic;font-size:16px;color:var(--teal-deep);line-height:1.6;padding-left:1.25rem;border-left:3px solid var(--teal-bright);border-radius:0;margin:1.1rem 0}
+.specialties-bg{background:var(--teal-pale);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1rem;margin-top:1.5rem}
+.service-card{background:var(--white);border:1px solid var(--border-light);border-radius:10px;padding:1.25rem;transition:border-color 0.2s}
+.service-card:hover{border-color:var(--teal-bright)}
+.service-icon{width:34px;height:34px;border-radius:8px;background:var(--teal-mid);display:flex;align-items:center;justify-content:center;margin-bottom:0.75rem;font-size:16px}
+.service-card h4{font-family:'Lora',serif;font-size:14px;font-weight:600;color:var(--text-dark);margin-bottom:0.4rem}
+.service-card p{font-size:12px;color:var(--text-muted);line-height:1.6}
+.research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem}
+.resource-card{border:1px solid var(--border-light);border-radius:10px;padding:1.25rem;background:var(--white);text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:0.5rem;transition:border-color 0.2s}
+.resource-card:hover{border-color:var(--teal-bright)}
+.resource-tag{font-size:10px;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;color:var(--teal-deep);background:var(--teal-pale);padding:3px 10px;border-radius:100px;display:inline-block;width:fit-content}
+.resource-card h4{font-family:'Lora',serif;font-size:13px;font-weight:600;color:var(--text-dark);line-height:1.4}
+.resource-card p{font-size:12px;color:var(--text-muted);line-height:1.6;flex:1}
+.resource-link{font-size:11px;color:var(--teal-deep);font-weight:500}
+.news-bg{background:var(--white);border-top:1px solid var(--border-light)}
+.news-list{display:flex;flex-direction:column;gap:0.75rem;margin-top:1.5rem}
+.news-item{display:flex;gap:1.25rem;align-items:flex-start;padding:1rem 1.25rem;border-radius:10px;border:1px solid var(--border-light);background:var(--off-white)}
+.news-date{flex-shrink:0;text-align:center;background:var(--teal-pale);border-radius:7px;padding:6px 12px;min-width:58px}
+.news-date .month{font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:var(--teal-deep);font-weight:500}
+.news-date .year{font-size:12px;color:var(--text-mid);font-weight:400}
+.news-content h4{font-family:'Lora',serif;font-size:14px;font-weight:600;color:var(--text-dark);margin-bottom:0.3rem}
+.news-content p{font-size:12px;color:var(--text-muted);line-height:1.6}
+.banner-section{background:var(--teal-deep);padding:3rem 2rem;text-align:center}
+.banner-section h2{font-family:'Lora',serif;font-size:1.6rem;color:#fff;margin-bottom:0.6rem;font-weight:600}
+.banner-section p{color:rgba(255,255,255,0.8);font-size:14px;margin-bottom:1.5rem}
+.btn-white{background:#fff;color:var(--teal-deep);padding:10px 24px;border-radius:7px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;text-decoration:none;display:inline-block;transition:background 0.2s}
+.btn-white:hover{background:var(--teal-pale)}
+footer{background:var(--teal-darker);color:rgba(255,255,255,0.6);padding:1.75rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.75rem}
+footer .brand{font-family:'Lora',serif;font-size:14px;color:rgba(255,255,255,0.9)}
+footer .brand span{color:var(--teal-bright)}
+footer p{font-size:11px}
+footer a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:11px}
+footer a:hover{color:#fff}
+@media(max-width:768px){
+  .hero{grid-template-columns:1fr;gap:1.75rem}
+  .services-grid,.research-grid{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .section{padding:2.25rem 1.25rem}
+  footer{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">Dr <span>Iain Duncan</span></div>
+  <ul class="nav-links">
+    <li><a href="file:///Users/ijsd2026/Downloads/driainduncan.html#about">About</a></li>
+    <li><a href="file:///Users/ijsd2026/Downloads/driainduncan.html#specialties">Specialties</a></li>
+    <li><a href="file:///Users/ijsd2026/Downloads/driainduncan.html#research">Research</a></li>
+    <li><a href="file:///Users/ijsd2026/Downloads/driainduncan.html#news">News</a></li>
+  </ul>
+  <a href="https://www.ultrasoundcbr.com.au/" class="btn-nav" target="_blank">ultrasoundCBR →</a>
+</nav>
+
+<div class="hero-wrap">
+  <div class="hero">
+    <div>
+      <div class="hero-tag">Canberra, Australia</div>
+      <h1>Diagnostic imaging with a <em>clinical focus</em></h1>
+      <p class="hero-desc">Dr Iain Duncan brings together over 35 years of expertise in musculoskeletal medicine and diagnostic ultrasound to deliver genuinely patient-centred care.</p>
+      <div class="hero-actions">
+        <a href="file:///Users/ijsd2026/Downloads/driainduncan.html#about" class="btn-primary">About Dr Duncan</a>
+        <a href="file:///Users/ijsd2026/Downloads/driainduncan.html#research" class="btn-outline">Research &amp; publications</a>
+      </div>
+    </div>
+    <div>
+      <div class="hero-card">
+        <div class="avatar-circle">ID</div>
+        <h3>Dr Iain Duncan</h3>
+        <p class="sub">Medical Director, ultrasoundCBR · Bruce, Canberra</p>
+        <div class="credentials">
+          <div class="cred-item"><div class="cred-dot"></div>FRACP — Rheumatology</div>
+          <div class="cred-item"><div class="cred-dot"></div>FAANMS — Nuclear Medicine Specialist</div>
+          <div class="cred-item"><div class="cred-dot"></div>DDU (ASUM) — Diagnostic Ultrasound</div>
+          <div class="cred-item"><div class="cred-dot"></div>MBBS, Sydney University (1983)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="about" style="background:var(--white);border-bottom:1px solid var(--border-light)">
+  <div class="section">
+    <p class="section-label">About</p>
+    <h2 class="section-title">A rare intersection of skills</h2>
+    <p class="about-text">Dr Iain Duncan is a Diagnostic Imaging Physician with qualifications spanning rheumatology and diagnostic ultrasound. This unique combination enables him to approach musculoskeletal medicine from multiple perspectives — assessing patients clinically and through a wide range of diagnostic tools.</p>
+    <blockquote class="about-quote">"Part of my job is to make every scan and interaction specific, relevant and worthwhile."</blockquote>
+    <p class="about-text">He is passionate about diagnostic imaging as an integral part of patient care — not a standalone test — and thrives working in close collaboration with dedicated clinical teams.</p>
+    <p class="about-text">Iain is now Medical Director at <a href="https://www.ultrasoundcbr.com.au/" style="color:var(--teal-deep);text-decoration:none;font-weight:500" target="_blank">ultrasoundCBR</a> in Bruce, Canberra, following a distinguished career and as Founder of Garran Medical Imaging.</p>
+  </div>
+</div>
+
+<div id="specialties" class="specialties-bg">
+  <div class="section">
+    <p class="section-label">Specialties</p>
+    <h2 class="section-title">Areas of clinical focus</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🦴</div>
+        <h4>Diagnostic Ultrasound</h4>
+        <p>High-resolution musculoskeletal ultrasound for tendons, joints, soft tissue, and guided injections.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🩺</div>
+        <h4>Musculoskeletal Medicine</h4>
+        <p>Clinical assessment of arthritis, tendinopathy, osteoporosis, sports injuries, and chronic pain conditions.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💉</div>
+        <h4>Injection Therapies</h4>
+        <p>Ultrasound-guided corticosteroid, platelet-rich plasma (PRP), and hyaluronic acid injections.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔬</div>
+        <h4>Regenerative Therapies</h4>
+        <p>Evidence-based PRP therapy for osteoarthritis, tendinopathy, and soft tissue conditions.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🫀</div>
+        <h4>Rheumatology</h4>
+        <p>Clinical and imaging assessment focused on osteoarthritis and soft tissue problems.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="research" style="background:var(--off-white);border-bottom:1px solid var(--border-light)">
+  <div class="section">
+    <p class="section-label">Research &amp; publications</p>
+    <h2 class="section-title">Contributing to the field</h2>
+    <p class="section-intro">Iain has contributed widely to research in musculoskeletal medicine and diagnostic ultrasound across his career.</p>
+    <div class="research-grid">
+      <a href="https://driainduncan.com.au/prp-in-osteoarthritis/" class="resource-card" target="_blank">
+        <div class="resource-tag">Review</div>
+        <h4>PRP in Osteoarthritis</h4>
+        <p>A comprehensive review of the evidence for platelet-rich plasma therapy in osteoarthritis management.</p>
+        <div class="resource-link">Read review →</div>
+      </a>
+      <a href="https://driainduncan.com.au/category/iainsresearch/" class="resource-card" target="_blank">
+        <div class="resource-tag">Research</div>
+        <h4>Published research &amp; abstracts</h4>
+        <p>Archive of papers, presentations, and abstracts across diagnostic imaging and musculoskeletal medicine.</p>
+        <div class="resource-link">Browse research →</div>
+      </a>
+      <a href="https://orcid.org/0000-0001-8678-4501" class="resource-card" target="_blank">
+        <div class="resource-tag">ORCID</div>
+        <h4>Full publication record</h4>
+        <p>Complete list of publications and work accessible via ORCID.</p>
+        <div class="resource-link">View on ORCID →</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="news" class="news-bg">
+  <div class="section">
+    <p class="section-label">News &amp; updates</p>
+    <h2 class="section-title">What's happening</h2>
+    <div class="news-list">
+      <div class="news-item">
+        <div class="news-date"><div class="month">Jul</div><div class="year">2024</div></div>
+        <div class="news-content">
+          <h4>Iain joins ultrasoundCBR as Medical Director</h4>
+          <p>Following a distinguished career and Founder of Garran Medical Imaging, Dr Duncan is now Medical Director at ultrasoundCBR in Bruce, Canberra — a team of outstanding professionals offering comprehensive ultrasound and musculoskeletal services.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-date"><div class="month">Ongoing</div><div class="year"></div></div>
+        <div class="news-content">
+          <h4>Latest research &amp; clinical updates</h4>
+          <p>Iain continues to share updates on advances in musculoskeletal medicine, imaging technology, and regenerative therapies.</p>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:1.25rem">
+      <a href="https://driainduncan.com.au/dr-iain-duncan-news/" class="btn-outline" target="_blank">All news on driainduncan.com.au →</a>
+    </div>
+  </div>
+</div>
+
+<div class="banner-section">
+  <h2>Now at ultrasoundCBR</h2>
+  <p>Dr Duncan is Medical Director at ultrasoundCBR, offering diagnostic ultrasound and musculoskeletal services in Bruce, Canberra.</p>
+  <a href="https://www.ultrasoundcbr.com.au/" class="btn-white" target="_blank">Visit ultrasoundCBR →</a>
+</div>
+
+<footer>
+  <div class="brand">Dr <span>Iain Duncan</span></div>
+  <p>Musculoskeletal physician · Diagnostic ultrasound · Canberra</p>
+  <div style="display:flex;gap:1.25rem">
+    <a href="https://driainduncan.com.au/" target="_blank">driainduncan.com.au</a>
+    <a href="https://www.ultrasoundcbr.com.au/" target="_blank">ultrasoundCBR</a>
+    <a href="https://orcid.org/0000-0001-8678-4501" target="_blank">ORCID</a>
+  </div>
+</footer>
+
+
+
+</body></html>
