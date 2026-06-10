@@ -60,7 +60,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.96);backdrop
 .content hr{border:0;border-top:1px solid var(--border-light);margin:2.5rem 0}
 
 /* Feature image */
-.feature-image{margin:0 0 1.75rem 0;border-radius:12px;overflow:hidden;background:var(--teal-pale)}
+.feature-image{margin:0 auto 1.75rem;max-width:420px;border-radius:12px;overflow:hidden;background:var(--teal-pale)}
 .feature-image img{width:100%;height:auto;display:block}
 .feature-image figcaption{font-size:12px;color:var(--text-muted);font-style:italic;padding:0.7rem 1rem;text-align:center;background:var(--white);border-top:1px solid var(--border-light)}
 
